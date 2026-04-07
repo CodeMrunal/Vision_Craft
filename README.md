@@ -1,6 +1,7 @@
-# VisionCraft - Image Classification Web App
+ VisionCraft - A Lightweight Convolutional Neural Network for Real-Time Image Classification
 
-A modern, professional Streamlit web application for image classification using TensorFlow/Keras models. Upload images and get instant predictions with beautiful visualizations.
+
+A modern, professional  application for image classification using TensorFlow/Keras models. Upload images and get instant predictions with beautiful visualizations.
 
 **👩‍💻 Made by Falguni Shinde**
 
@@ -11,9 +12,7 @@ A modern, professional Streamlit web application for image classification using 
 | **Attribute** | **Description** |
 |---------------|------------------|
 | **Project Name** | VisionCraft |
-| **Type** | Web Application (Streamlit) |
 | **Purpose** | Image Classification using Deep Learning |
-| **Framework** | Streamlit, TensorFlow/Keras |
 | **Supported Formats** | JPG, JPEG, PNG |
 | **Image Preprocessing** | Resize to 224×224, Normalize (0-1) |
 | **Deployment** | Local/Cloud (Streamlit Cloud, Heroku, etc.) |
@@ -24,7 +23,6 @@ A modern, professional Streamlit web application for image classification using 
 
 | **Component** | **Technology** | **Version** | **Purpose** |
 |---------------|----------------|-------------|-------------|
-| **Web Framework** | Streamlit | ≥1.36.0 | UI and web interface |
 | **Deep Learning** | TensorFlow | ≥2.12.0 | Model loading and inference |
 | **Image Processing** | Pillow (PIL) | ≥9.5.0 | Image loading and manipulation |
 | **Data Processing** | NumPy | ≥1.24.0 | Array operations and preprocessing |
@@ -39,7 +37,6 @@ A modern, professional Streamlit web application for image classification using 
 | **File/Directory** | **Description** |
 |--------------------|-----------------|
 | `app.py` | Main Streamlit application file |
-| `model.h5` | Trained TensorFlow/Keras model (user-provided) |
 | `class_indices.json` | Optional: Class label mappings (JSON) |
 | `requirements.txt` | Python dependencies |
 | `README.md` | Project documentation |
@@ -58,7 +55,6 @@ A modern, professional Streamlit web application for image classification using 
 | **Class Labels** | Support for custom class names via JSON or manual input |
 | **Confidence Visualization** | Interactive Altair bar charts with tooltips |
 | **Progress Indicators** | Real-time progress bars and success messages |
-| **Modern UI** | Gradient backgrounds, hover effects, centered layout |
 | **Responsive Design** | Works on desktop and tablet devices |
 | **Dark Mode Support** | Automatic theme detection |
 
@@ -250,17 +246,9 @@ graph LR
    pip install -r requirements.txt
    ```
 
-3. **Place your trained model**
-   - Save your Keras model as `model.h5` in the project root
-   - Ensure the model accepts 224×224 input images
-
-4. **Optional: Add class labels**
-   - Create `class_indices.json` with your class names
-   - Format: `["class1", "class2", ...]` or `{"class1": 0, "class2": 1, ...}`
-
-5. **Run the application**
+3. **Run the application**
    ```bash
-   streamlit run app.py
+    run app.py
    ```
 
 ---
@@ -269,7 +257,7 @@ graph LR
 
 | **Step** | **Action** | **Description** |
 |----------|------------|-----------------|
-| 1 | Launch App | Run `streamlit run app.py` |
+| 1 | Launch App | Run ` run app.py` |
 | 2 | Select Tab | Choose "Single Image" or "Batch Upload" |
 | 3 | Upload Image(s) | Drag & drop or browse for JPG/JPEG/PNG files |
 | 4 | View Results | See prediction, confidence, and bar chart |
@@ -298,7 +286,6 @@ graph LR
 | **Setting** | **Location** | **Options** |
 |------------|--------------|-------------|
 | **Class Labels** | Sidebar → Text Area | Comma-separated list or JSON file |
-| **Model Path** | Hardcoded | `model.h5` (changeable in code) |
 | **Input Size** | Hardcoded | 224×224 (changeable in code) |
 | **Theme** | Auto-detected | Light/Dark based on system |
 
@@ -319,7 +306,6 @@ graph LR
 
 | **Issue** | **Solution** |
 |-----------|--------------|
-| Model not found | Ensure `model.h5` is in the project root |
 | Import errors | Run `pip install -r requirements.txt` |
 | Image format error | Use JPG, JPEG, or PNG only |
 | Low confidence | Check if model matches your image classes |
@@ -332,7 +318,6 @@ graph LR
 | **Item** | **Details** |
 |----------|-------------|
 | **Author** | Falguni Shinde |
-| **Framework** | Streamlit (Apache 2.0) |
 | **ML Library** | TensorFlow (Apache 2.0) |
 | **License** | Check individual dependencies |
 
