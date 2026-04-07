@@ -1,0 +1,21 @@
+# Ignore datasets
+dataset_7_classes/
+merged_dataset/
+merged_7class_dataset/
+Human Faces/
+Vehicle dataset/
+oobj traffic/
+motorbike/
+
+# Ignore archives
+*.zip
+archive/
+
+# Ignore models
+models/
+*.h5
+*.pt
+*.pth
+
+# Ignore cache
+__pycache__/
