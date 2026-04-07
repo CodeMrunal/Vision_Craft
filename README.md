@@ -14,7 +14,6 @@ A modern, professional Streamlit web application for image classification using 
 | **Type** | Web Application (Streamlit) |
 | **Purpose** | Image Classification using Deep Learning |
 | **Framework** | Streamlit, TensorFlow/Keras |
-| **Model Format** | Keras H5 (.h5) |
 | **Supported Formats** | JPG, JPEG, PNG |
 | **Image Preprocessing** | Resize to 224×224, Normalize (0-1) |
 | **Deployment** | Local/Cloud (Streamlit Cloud, Heroku, etc.) |
